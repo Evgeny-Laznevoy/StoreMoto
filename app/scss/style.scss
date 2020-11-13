@@ -1,9 +1,55 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
+.header {
 
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 120px;
+        @extend %sf-bold;
+    }
 
+    &__box {
+        display: flex;
+    }
+
+    &__adress {
+        margin-right: 60px;
+        width: 265px;
+        padding-left: 30px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/location-icon.svg);
+            left: 0;
+            width: 30px;
+            height: 30px;
+            top: -10px;
+        }
+    }
+}
+
+.menu {
+    &__list-item {
+        display: inline-block;
+        & + .menu__list-item {
+            padding-left: 50px;
+        }
+    }
+}
+
+.user-list {
+    display: flex;
+    margin-right: 15px;
+    &__item {
+        padding-right: 10px;
+    }
+}
 
 
 @import "media";

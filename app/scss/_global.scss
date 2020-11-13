@@ -1,0 +1,106 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*, *:before, *:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: inherit;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 20px;
+   line-height: 24px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   color: #2F3035;
+   @extend %sf-regular;
+}
+
+
+/* font inheritance */
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none; margin: 0; padding: 0;}
+
+img{
+   vertical-align: middle;
+   max-width: 100%;
+   width: auto;
+   height: auto;
+   border: 0;
+   -ms-interpolation-mode: bicubic;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;margin: 0;}
+
+.container {
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+// .page-section {
+//    background-image: url('../img/page-bg.jpg');
+//    background-repeat: no-repeat;
+//    background-position: top center;
+//    background-size: cover;
+//    position: relative;
+//    &::before {
+//       content: '';
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       top: 0;
+//       background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+//       opacity: 0.15;
+//    }
+//    &__wrapper {
+//       min-height: 100vh;
+//       position: relative;
+//       z-index: 1;
+//       padding: 74px 0 50px;
+//    }
+// }
+
+
+// .title {
+//    @extend %sf-regular;
+//    font-size: 44px;
+//    line-height: 53px;
+//    padding-left: 25px;
+//    margin-bottom: 55px;
+//    padding-top: 170px;
+// }
+
+// .scroll__btn {
+//    padding: 13px 0 30px;
+//    text-align: center;
+//    position: absolute;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+// }
+
+
