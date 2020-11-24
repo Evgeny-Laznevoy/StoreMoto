@@ -682,12 +682,11 @@
       width: 180px;
 
       .social {
-        
         &-list {
           display: flex;
           align-items: center;
           height: 100%;
-          
+
           &__item + .social-list__item {
             margin-left: 30px;
           }
@@ -718,6 +717,38 @@
       margin: 0 40px;
     }
   }
+}
+
+.breadcrums {
+  margin-bottom: 40px;
+
+  &__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    color: #c4c4c4;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      right: 0;
+      background-image: url(../img/arrow-right-crumbs.svg);
+      height: 11px;
+      bottom: 3px;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrums__list-item:last-child::after {
+  display: none;
 }
 
 @import "media";
