@@ -874,7 +874,7 @@
   &__wrapper {
     position: relative;
     width: 270px;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &.product-item__wrapper--list {
       width: 100%;
@@ -1506,5 +1506,59 @@
 
 .filter__item-drop--active::after {
   transform: rotate(180deg);
+}
+
+// page product
+
+.product-card {
+  margin-bottom: 80px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    width: 500px;
+    padding-top: 64px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+    }
+  }
+
+  &__content {
+    width: 700px;
+  }
+
+  &__price-old {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 44px;
+    color: #2f3035;
+    opacity: 0.6;
+    margin-bottom: 0;
+    background-image: url(../img/line-old-price.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__price-new {
+    font-size: 40px;
+    line-height: 48px;
+    @extend %sf-bold;
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: #1c62cd;
+    border-bottom: 1px solid #1c62cd;
+  }
 }
 @import "media";
