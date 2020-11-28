@@ -20,7 +20,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "rateyo": "^3.0.0-alpha.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "rateyo": "^2.3.5"
   }
 }

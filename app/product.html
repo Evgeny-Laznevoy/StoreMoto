@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
   <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.css">
   <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -154,25 +155,27 @@
           </h1>
           <p class="product-card__code">Код товара: 	366666-2 </p>
           <div class="product-card__buttons">
-            <button class="product-card__icon-favorite">
+            <a class="product-card__icon-favorite" href="#">
               <img src="./img/favorite-icon.svg" alt="favorite">
-            </button>
-            <button class="product-card__icon-">
+            </a>
+            <a class="product-card__icon-comparsion" href="#">
               <img src="./img/graf.svg" alt="">
-            </button>
-            <div class="rate"></div>
+            </a>
+            <a class="rate" href="#">
+              <div class="rate-yo"></div>
+            </a>
           </div>
           <div class="tabs-wrapper product-card__tabs">
             <div class="tabs">
-              <a class="tab product-card__tab tab--active" href="#">
+              <a class="tab product-card__tab tab--active" href="#product-1">
                 Характеристики
               </a>
-              <a class="tab product-card__tab" href="#">
+              <a class="tab product-card__tab" href="#product-2">
                 Наличие в магазине
               </a>
             </div>
             <div class="tabs-container">
-              <div class="tabs-content product-card__tab-content tabs-content--active">
+              <div id="product-1" class="tabs-content product-card__tab-content tabs-content--active">
                 <ul class="product-card__list">
                   <li class="product-card__item">
                     <div class="product-card__item-left">Производитель</div>
@@ -195,11 +198,15 @@
                     <div class="product-card__item-right">2018</div>
                   </li>
                 </ul>
-                <a class="product-card__more"  href="">Показать еще</a>
-                <button class="product-card__btn">купить</button>
+                <a class="product-card__more"  href="#">
+                  <span>Показать еще</span>
+                </a>
+                <div class="product-card__btn">
+                  <button>купить</button>
+                </div>
               </div>
-              <div class="tabs-content product-card__tab-content">
-
+              <div id="product-2" class="tabs-content product-card__tab-content">
+                content 2
               </div>
             </div>
           </div>
@@ -296,6 +303,7 @@
   <script src="js/libs.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

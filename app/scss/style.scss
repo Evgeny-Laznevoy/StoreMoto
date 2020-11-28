@@ -308,14 +308,6 @@
       display: flex;
     }
 
-    .tabs-content {
-      display: none;
-    }
-
-    .tabs-content.search__content-item.tabs-content--active {
-      display: block;
-    }
-
     &-input {
       background: #f0f0f4;
       width: 100%;
@@ -345,6 +337,16 @@
     }
   }
 }
+
+//global class///////////////////
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.tabs-content--active {
+  display: block;
+}
+////////////////////////////////
 
 .categories {
   &__inner {
@@ -1533,7 +1535,7 @@
   }
 
   &__content {
-    width: 700px;
+    width: 570px;
   }
 
   &__price-old {
@@ -1559,6 +1561,94 @@
     line-height: 18px;
     color: #1c62cd;
     border-bottom: 1px solid #1c62cd;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #2f3035;
+    @extend %sf-bold;
+    margin-bottom: 10px;
+  }
+
+  &__code {
+    font-size: 15px;
+    line-height: 18px;
+    color: #2f3035;
+    opacity: 0.6;
+    margin-bottom: 22px;
+  }
+
+  &__buttons {
+    margin-bottom: 50px;
+  }
+
+  &__tab {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+    opacity: 0.6;
+    padding-bottom: 5px;
+    padding-right: 17px;
+    margin-bottom: 5px;
+
+    & + .product-card__tab {
+      padding-left: 17px;
+    }
+
+    &.tab--active {
+      opacity: 1;
+      border-bottom: 2px solid #1c62cd;
+      color: #2f3035;
+      @extend %sf-bold;
+    }
+  }
+
+  &__item {
+    padding: 15px 0 6px;
+    border-bottom: 1px solid rgba($color: #2f3035, $alpha: 0.1);
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      padding-right: 15px;
+    }
+
+    &-right {
+      width: 125px;
+    }
+  }
+
+  &__more {
+    font-size: 14px;
+    line-height: 17px;
+    color: #1c62cd;
+    border-bottom: 1px solid #1c62cd;
+    margin-bottom: 40px;
+  }
+
+  &__btn button {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 16px 56px;
+    background: #1c62cd;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+
+    & a + a {
+      margin-left: 30px;
+    }
   }
 }
 @import "media";
