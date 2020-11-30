@@ -239,29 +239,32 @@
                   <input class="card__input-search" type="text">
                 </label>
                 <label class="card__label-pickup">
-                  <input type="radio" checked>
+                  <input class="filter-style" type="radio" name="pickup">
                   Забрать сегодня
                 </label>
                 <label class="card__label-pickup">
-                  <input type="radio">
+                  <input class="filter-style" type="radio" name="pickup" checked>
                   Забрать в течение недели
                 </label>
               </div>
               <ul class="card__tabs-list">
-                <li class="card__list-item">
-                  <div class="card__list-address card__list-addresstitle">Адрес</div>
-                  <div class="card__list-workhours card__list-workhourstitle">Режим работы</div>
-                  <div class="card__list-avialable card__list-avialabletitle">Доступно</div>
-                  <div class="card__list-num card__list-numtitle">Количество</div>
-                  <div class="card__list-btn card__list-btntitle">
-                    <button type="submit">КУПИТЬ</button>
-                  </div>
+                <li class="card__list-item card__list-itemtitle">
+                  <div class="card__list-address">Адрес</div>
+                  <div class="card__list-workhours">Режим работы</div>
+                  <div class="card__list-avialable">Доступно</div>
+                  <div class="card__list-num">Количество</div>
                 </li>
                 <li class="card__list-item">
                   <div class="card__list-address">Москва, ул. Науки 25</div>
                   <div class="card__list-workhours">
-                    <span>пн-сб: 08:00-19:00</span>
-                    <span>вс: 09:00-17:00</span>
+                    <div class="workhours">
+                      <span>пн-сб:</span> 
+                      <span>08:00-19:00</span>
+                    </div>
+                    <div class="workhours"> 
+                      <span>вс:</span> 
+                      <span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">В наличии</div>
                   <div class="card__list-num">1</div>
@@ -272,8 +275,14 @@
                 <li class="card__list-item">
                   <div class="card__list-address">Москва, ул.  Южная 134</div>
                   <div class="card__list-workhours">
-                    <span>пн-сб: 08:00-19:00</span>
-                    <span>вс: 09:00-17:00</span>
+                    <div class="workhours">
+                      <span>пн-сб:</span> 
+                      <span>08:00-19:00</span>
+                    </div>
+                    <div class="workhours"> 
+                      <span>вс:</span> 
+                      <span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">В наличии</div>
                   <div class="card__list-num">2</div>
@@ -282,10 +291,17 @@
                   </div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address">Санкт-Петербург, ул. Красная 19</div>
+                  <div class="card__list-address">Санкт-Петербург,<br> 
+                    ул. Красная 19</div>
                   <div class="card__list-workhours">
-                    <span>пн-сб: 08:00-19:00</span>
-                    <span>вс: 09:00-17:00</span>
+                    <div class="workhours">
+                      <span>пн-сб:</span> 
+                      <span>08:00-19:00</span>
+                    </div>
+                    <div class="workhours"> 
+                      <span>вс:</span> 
+                      <span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">Нет в наличии</div>
                   <div class="card__list-num">0</div>
@@ -296,8 +312,14 @@
                 <li class="card__list-item">
                   <div class="card__list-address">Киев, ул Шевченко 167</div>
                   <div class="card__list-workhours">
-                    <span>пн-сб: 08:00-19:00</span>
-                    <span>вс: 09:00-17:00</span>
+                    <div class="workhours">
+                      <span>пн-сб:</span> 
+                      <span>08:00-19:00</span>
+                    </div>
+                    <div class="workhours"> 
+                      <span>вс:</span> 
+                      <span>09:00-17:00</span>
+                    </div>
                   </div>
                   <div class="card__list-avialable">Нет в наличии</div>
                   <div class="card__list-num">0</div>
