@@ -30,6 +30,8 @@ body {
    -webkit-text-size-adjust: 100%;
    color: #2F3035;
    @extend %sf-regular;
+   overflow-x: hidden;
+   min-width: 320px;
 }
 
 
