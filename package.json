@@ -20,7 +20,9 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1",
-    "rateyo": "^2.3.5"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "rateyo": "^2.3.5",
+    "slick-carousel": "^1.8.1"
   }
 }
