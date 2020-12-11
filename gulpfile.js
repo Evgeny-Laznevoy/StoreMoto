@@ -9,8 +9,7 @@ const del = require("del");
 
 function scripts() {
   return src([
-    "app/js/*.js", 
-    "!libs.min.js",
+    "app/js/main.js", 
     "node_modules/slick-carousel/slick/slick.js",
 ])
     .pipe(concat("libs.min.js"))
@@ -79,7 +78,7 @@ function build() {
 
 function watching() {
   watch(["app/scss/**/*.scss"], styles);
-  watch(["app/**/*.js", "!app/js/libs.min.js"], scripts);
+  watch(["app/js/main.js"], scripts);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }
 

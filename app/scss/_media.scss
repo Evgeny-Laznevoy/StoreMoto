@@ -1,3 +1,11 @@
+@media (max-width: 1300px) {
+  .products {
+    .product__more {
+      margin-top: 60px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .banner-section {
     &__slider-img {
@@ -108,7 +116,7 @@
     width: 450px;
   }
 
-  .mpbile-overflow {
+  .mobile-overflow {
     width: 1000px;
   }
 

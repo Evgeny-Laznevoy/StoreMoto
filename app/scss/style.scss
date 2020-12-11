@@ -203,6 +203,10 @@
     padding: 0 5px;
   }
 
+  .slick-active button{
+    background-color: #fff;
+  }
+
   button {
     border: 1px solid #ffffff;
     width: 11px;
@@ -485,6 +489,18 @@
       }
       &__left {
         left: -40px;
+      }
+
+      .slick-dots {
+        bottom: -30px;
+
+        .slick-active button {
+          background-color: #1c62cd;
+        }
+
+        button {
+          background-color: #c4c4c4;
+        }
       }
     }
   }
