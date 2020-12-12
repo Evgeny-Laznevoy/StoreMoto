@@ -123,12 +123,27 @@
   .tabs-wrapper {
     overflow-x: scroll;
   }
-
 }
 
+@media (max-width: 940px) {
+  .footer {
+    &__top {
+      &-inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
-@media (max-width: 840px) {
+      &-item {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
 
+@media (max-width: 740px) {
+  .footer__top-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -156,7 +171,7 @@
   .search__content-btn {
     font-size: 0;
     line-height: 0;
-    background-image: url('../img/search.svg');
+    background-image: url("../img/search.svg");
     padding: 17px;
     width: 24px;
     height: 24px;
@@ -177,6 +192,73 @@
   }
 }
 
+@media (max-width: 540px) {
+  .footer__top {
+    &-item {
+      border-bottom: 2px solid #f9f9fc;
+      width: 100%;
+
+      &.footer__top-itemdrop {
+        margin-bottom: 0;
+        border-top: 2px solid #f9f9fc;
+      }
+
+      &.footer__top-newslatter {
+        margin-right: auto;
+        margin-left: auto;
+        width: 285px;
+        text-align: center;
+      }
+      &.footer__top-social {
+        width: 100%;
+        border-bottom: none;
+      }
+    }
+    &-inner {
+      justify-content: start;
+    }
+    &-title {
+      &.footer__topdrop {
+        font-size: 14px;
+        line-height: 18px;
+        color: #7f7f7f;
+        font-weight: 500;
+        padding: 15px 0;
+      }
+    }
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: start;
+    &-link {
+      margin: 12px 0;
+    }
+  }
+  .social-list {
+    justify-content: center;
+  }
+  .footer-list {
+    display: none;
+  }
+  .footer__topdrop {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/arrow-drop-up.svg);
+      right: 0;
+      width: 12px;
+      height: 8px;
+      transform: rotate(180deg);
+      top: 21px;
+    }
+
+    &.footer__topdrop--active::after {
+      transform: rotate(0deg);
+    }
+  }
+}
 
 @media (max-width: 440px) {
   .banner-section {
@@ -186,6 +268,6 @@
   }
 
   .categories__item {
-    padding: 20px 10px  16px;
+    padding: 20px 10px 16px;
   }
 }
